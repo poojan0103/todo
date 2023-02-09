@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todo.css">
     <script src="todo.js"></script>
     <title>Your To-Do List</title>
 </head>
 
 <body onload="showList()">
     <div id="container">
+        <div id="delateAlert" class="alert alert-danger" role="alert">
+            Your Task has been Deleted
+        </div>
         <h1 class="heading">Your To-Do List</h1>
         <table class="table" id="todotable">
             <thead>
@@ -30,13 +33,16 @@
 
             </tbody>
         </table>
-        <a href="to-do.html">
-            <button type="button" class="btn btn-info">Add Another Item</button></a>
+    </div>
+    <div id="newBtn">
+        <a href="to-do.html" onfocus="clearVelidation()">
+            <button type="button" class="btn btn-info">Add Another Item</button>
+        </a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="todo.js"></script>
 </body>
 
 </html>
